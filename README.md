@@ -17,6 +17,4 @@ On clients add the proxy with
 
     echo 'Acquire::http { Proxy "http://apt-proxy:3142"; };' >> /etc/apt/conf.d/01proxy
 
-To see what's cached connect to host
-
-    docker exec -it apt-proxy /usr/lib/apt-cacher-ng/distkill.pl
+To see what's cached connect to host - http://apt-proxy:3142/acng-report.html
