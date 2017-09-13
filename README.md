@@ -14,7 +14,9 @@ To run on macvlan network (called pub_net) and persist the data in /mnt/docker/d
        martinjohn/apt-proxy
 
 On clients add the proxy with
+
     echo 'Acquire::http { Proxy "http://apt-proxy:3142"; };' >> /etc/apt/conf.d/01proxy
 
 To see what's cached connect to host
+
     docker run --rm -it apt-proxy /usr/lib/apt-cacher-ng/distkill.pl
