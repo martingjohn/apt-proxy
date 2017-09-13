@@ -19,4 +19,4 @@ On clients add the proxy with
 
 To see what's cached connect to host
 
-    docker exec --rm -it apt-proxy /usr/lib/apt-cacher-ng/distkill.pl
+    docker exec -it apt-proxy /usr/lib/apt-cacher-ng/distkill.pl
