@@ -10,7 +10,7 @@ To run on macvlan network (called pub_net) and persist the data in /mnt/docker/d
        --network=pub_net \
        --ip=192.168.10.123 \
        --restart=unless-stopped \
-       -v /mnt/docker/data/apt-cache:/var/cache/apt-cacher-ng \
+       -v /mnt/docker/data/apt-proxy:/var/cache/apt-cacher-ng \
        martinjohn/apt-proxy
 
 On clients add the proxy with
