@@ -2,7 +2,7 @@
 
 Based on https://docs.docker.com/engine/examples/apt-cacher-ng/
 
-To run on macvlan network (called pub_net) and persist the data in /mnt/docker/data/apt-cache on docker host
+To run on macvlan network (called pub_net - dns sets apt-proxy to 192.168.10.123) and persist the data in /mnt/docker/data/apt-cache on docker host
 
     docker run \
        -d \
